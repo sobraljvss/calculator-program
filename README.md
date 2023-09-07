@@ -12,6 +12,8 @@ A useful web calculator program, able to do from sum and subtraction to sine and
 
 Anyone can contribute with issues and pull requests: more advanced functions can be added via new keyboard panels!
 
+Also, code reviews and ratings are appreciated!
+
 ## Usage
 
 The program can be accessed by downloading all the files and opening index.html in a browser.
