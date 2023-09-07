@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+# [2.0.0] - 2023-09-08
+
+### Added
+
+- More functionalities (parenthesis, equals, etc)
+- Much better style with Bootstrap
+
+### Deprecated
+
+- Single keyboard panel
+- Uniform style for all buttons
+
 ## [1.1.0] - 2023-09-07
 
 ### Added
