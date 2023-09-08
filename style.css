@@ -4,12 +4,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: radial-gradient(#cd47ae, #958fe1) no-repeat border-box, radial-gradient(#91a0af, #1dd04e) no-repeat border-box;
 }
 #calculator{
-  height: 60%;
-  aspect-ratio: 4/5;
+  margin: 10px;
+  height: 90%;
+  aspect-ratio: 2/3;
   border-radius: 10px;
-  border: 10px solid purple;
+  min-height: 400px;
+  min-width: 320px;
+  font-family: 'Consolas', monospace;
 }
 #calculator > *, #keyboard > *{
   width: 100%;
@@ -18,12 +22,35 @@ body{
 }
 #operators, #operators > div{height: 100%;}
 #screen{
+  overflow-y: hidden;
+  text-align: right;
+  background-color: transparent;
+  color: white;
+  font-size: calc(1em + 9vh);
+  cursor: default;
   border: none;
   border-radius: 10px 10px 0 0;
+  white-space: nowrap;
+  scrollbar-color: #958fe1 transparent;
+  vertical-align: middle;
 }
-#keyboard{border-radius: 10px;}
+#screen:focus{outline: none;}
+#keyboard{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(180px) saturate(80px);
+}
 #keyboard, #panel{height: 80%;}
 #screen, #tools{height: 20%;}
 #numbers{padding: 0;}
 #numbers > *, #operators > *{height: 25%;}
-button{width: 100%;}
+button{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: calc(1em + 0.5vh) !important;
+}
+button:hover{
+  backdrop-filter: saturate(1000px);
+}
