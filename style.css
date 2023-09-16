@@ -4,15 +4,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(#cd47ae, #958fe1) no-repeat border-box, radial-gradient(#91a0af, #1dd04e) no-repeat border-box;
+  background: radial-gradient(#cd47ae, #958fe1);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 #calculator{
   margin: 10px;
-  height: 90%;
+  height: 80%;
   aspect-ratio: 2/3;
   border-radius: 10px;
-  min-height: 400px;
-  min-width: 320px;
+  min-height: 250px;
+  min-width: 150px;
   font-family: 'Consolas', monospace;
 }
 #calculator > *, #keyboard > *{
@@ -25,20 +27,18 @@ body{
   overflow-y: hidden;
   text-align: right;
   background-color: transparent;
-  color: white;
   font-size: calc(1em + 9vh);
   cursor: default;
   border: none;
   border-radius: 10px 10px 0 0;
-  white-space: nowrap;
-  scrollbar-color: #958fe1 transparent;
-  vertical-align: middle;
+  scrollbar-color: white transparent;
+  color: white;
 }
 #screen:focus{outline: none;}
 #keyboard{
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(180px) saturate(80px);
+  backdrop-filter: blur(180%) saturate(80%);
 }
 #keyboard, #panel{height: 80%;}
 #screen, #tools{height: 20%;}
@@ -47,10 +47,13 @@ body{
 button{
   width: 100%;
   border: none;
-  background-color: transparent;
-  color: white;
   font-size: calc(1em + 0.5vh) !important;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
-button:hover{
-  backdrop-filter: saturate(1000px);
-}
+#panel > * > div > button{background-color: transparent;}
+#panel > * > div > button:hover{background-color: rgba(255, 255, 255, 0.1);}
+#tools > button{background-color: rgba(149, 143, 225, 0.5);}
+#tools > button:hover{background-color: rgba(149, 143, 225, 0.7);}
+#tools > button:first-child{border-radius: 10px 0 0 0;}
+#tools > button:last-child{border-radius: 0 10px 0 0;}
