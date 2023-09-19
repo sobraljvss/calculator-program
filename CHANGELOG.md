@@ -8,14 +8,24 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Added
 
-- [MathJS](https://mathjs.org/) implemented
-- New panel with more advanced functionalities
-- Carousel for switching panels
+- Second panel's functionalities
 
 ### Fixed
 
 - Now expressions are displayed in mathematics syntax
-- Expressions are evaluated with MathJS
+
+# [2.2.0] - 2023-09-18
+
+### Added
+
+- [MathJS](https://mathjs.org/) implemented
+- New panel
+- Carousel for switching panels
+
+### Fixed
+
+- Too bright color combinations (like yellow and white) for background were removed
+- Expressions are now evaluated with MathJS
 
 # [2.1.0] - 2023-09-16
 

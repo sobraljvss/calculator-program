@@ -14,6 +14,8 @@
 <body>
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <!--MathJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js" integrity="sha512-VMIzok05yICztVJ0Pu2ZXHHz6Pe+fNONIcepOD3kzgL0SJG3GH4IO3DmBRO766hIWUOHIS/IWdSqRGWWzgzqRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <div id="calculator" class="row-4">
     <p id="screen"></p>
     <div id="keyboard" class="row">
@@ -23,38 +25,75 @@
         <button id="point" value="." key="." class="col">.</button>
         <button id='equals' key="Enter" class="col">&equals;</button>
       </div>
-      <div id="panel" class="row">
-        <div id="numbers" class="col-9">   
-          <div class="col d-flex justify-content-center">
-            <button class="numbers" value="1" key="1">1</button>
-            <button class="numbers" value="2" key="2">2</button>
-            <button class="numbers" value="3" key="3">3</button>
+      <div id="panels" class="row carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#panels" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+          <li data-bs-target="#panels" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="panel row">
+              <div id="numbers" class="col-9">   
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent numbers" value="1" key="1">1</button>
+                  <button class="transparent numbers" value="2" key="2">2</button>
+                  <button class="transparent numbers" value="3" key="3">3</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent numbers" value="4" key="4">4</button>
+                  <button class="transparent numbers" value="5" key="5">5</button>
+                  <button class="transparent numbers" value="6" key="6">6</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent numbers" value="7" key="7">7</button>
+                  <button class="transparent numbers" value="8" key="8">8</button>
+                  <button class="transparent numbers" value="9" key="9">9</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent parenthesis" value="(" key="(">&lpar;</button>
+                  <button class="transparent numbers" value="0" key="0">0</button>
+                  <button class="transparent parenthesis" value=")" key=")">&rpar;</button>
+                </div>
+              </div>
+              <div id="operators" class="col">
+                <button class="transparent operators" value="+" key="+">+</button>
+                <button class="transparent operators" value="-" key="-">-</button>
+                <button class="transparent operators" symbol="x" value="*" key="*">x</button>
+                <button class="transparent operators" symbol="÷" value="/" key="/">&divide;</button>
+              </div>
+            </div>
           </div>
-          <div class="col d-flex justify-content-center">
-            <button class="numbers" value="4" key="4">4</button>
-            <button class="numbers" value="5" key="5">5</button>
-            <button class="numbers" value="6" key="6">6</button>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <button class="numbers" value="7" key="7">7</button>
-            <button class="numbers" value="8" key="8">8</button>
-            <button class="numbers" value="9" key="9">9</button>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <button class="parenthesis" value="(" key="(">&lpar;</button>
-            <button class="numbers" value="0" key="0">0</button>
-            <button class="parenthesis" value=")" key=")">&rpar;</button>
+          <div class="carousel-item">
+            <div class="panel row">
+              <div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent " value="**" key="^">^</button>
+                  <button class="transparent " value="sqrt(" key="">sqrt</button>
+                  <button class="transparent " value="%" key="%">%</button>
+                  <button class="transparent " value="i" key="i">i</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent " value="log(" key="">log</button>
+                  <button class="transparent " value="ln(" key="">ln</button>
+                  <button class="transparent " value="e" key="e">e</button>
+                  <button class="transparent " value="" key="">d/r</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent " value="sin(" key="">sin</button>
+                  <button class="transparent " value="cos(" key="">cos</button>
+                  <button class="transparent " value="tan(" key="">tan</button>
+                  <button class="transparent " value="pi" key="pi">&pi;</button>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button class="transparent " value="" key="">Arr</button>
+                  <button class="transparent " value="" key="">Com</button>
+                  <button class="transparent " value="!" key="!">!</button>
+                  <button class="transparent " value="" key="">?</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="operators" class="col">
-          <div class="row">
-            <button class="operators" value="+" key="+">+</button>
-            <button class="operators" value="-" key="-">-</button>
-            <button class="operators" symbol="x" value="*" key="*">x</button>
-            <button class="operators" symbol="÷" value="/" key="/">&divide;</button>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
