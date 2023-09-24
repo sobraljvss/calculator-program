@@ -18,15 +18,15 @@ A simple yet useful web calculator program, able to do from sum and subtraction 
 
 - The background gradient colors change with reload.
 
-- The upper "deg" is a button that switchs between degrees and radians.
+- The upper left "deg" is a button that switchs between degrees and radians.
 
-- It's possible to focus on screen and write on it or use keyboard buttons instead of the calculator 's buttons.
+- It's possible to focus on calculator's screen and write on it or use keyboard buttons instead of the calculator 's buttons.
 
-- The fixed buttons are clear (C or Delete), backspace (BS or Backspace), point (.) and equals (= or Enter).
+- The fixed buttons are: clear (C or Delete), backspace (BS or Backspace), point (.) and equals (= or Enter).
 
 - The keyboard's first panel brings numbers and the most used operators: plus, minus, times and divide.
 
-- The keyboard's second panel brings square, pow, square root, cubic root, common logarithm, natural logarithm, euler number, imaginary number, sine, cossine, tangent, pi, absolute, round, factorial and percentage.
+- The keyboard's second panel brings square power, power, square root, cubic root, common logarithm, natural logarithm, euler number, imaginary number, sine, cossine, tangent, pi, absolute, round, factorial and percentage buttons.
 
 ## Contributing
 
@@ -36,7 +36,7 @@ Also, code reviews, suggestions and ratings are appreciated!
 
 ## Usage
 
-The program can be accessed by downloading all the files and opening index.html in a browser.
+The program can be accessed by downloading all the files and opening index.html on a browser.
 
 ## Author
 

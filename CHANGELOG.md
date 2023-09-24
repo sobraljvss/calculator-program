@@ -4,8 +4,6 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
 # [3.0.0] - 2023-09-24
 
 ### Added
@@ -16,7 +14,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Updated
 
-- Expressions now are shown in a input
+- Expressions now are shown in a text input
 - Now carousel buttons are inside the keyboard
 
 ### Fixed
@@ -28,7 +26,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - [Math.js](https://mathjs.org/) implemented
-- New panel
+- New keyboard panel
 - Carousel for switching panels
 
 ### Fixed
