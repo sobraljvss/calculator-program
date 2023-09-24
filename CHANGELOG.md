@@ -6,19 +6,28 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+# [3.0.0] - 2023-09-24
+
 ### Added
 
 - Second panel's functionalities
+- Icon file (favicon.ico)
+- Folder with images for README.md (readme_images)
+
+### Updated
+
+- Expressions now are shown in a input
+- Now carousel buttons are inside the keyboard
 
 ### Fixed
 
-- Now expressions are displayed in mathematics syntax
+- Some minor bugs
 
 # [2.2.0] - 2023-09-18
 
 ### Added
 
-- [MathJS](https://mathjs.org/) implemented
+- [Math.js](https://mathjs.org/) implemented
 - New panel
 - Carousel for switching panels
 
@@ -33,11 +42,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Unique style for fixed tool buttons
 - Keyboard keys now work too
+- Background gradient colors now change with reload
 
 ### Deprecated
 
 - Evaluation of expressions via eval function
-- Expressions displayed in JavaScript syntax
 
 # [2.0.0] - 2023-09-07
 
